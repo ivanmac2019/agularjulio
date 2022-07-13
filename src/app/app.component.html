@@ -1,0 +1,86 @@
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * The content below * * * * * * * * * * * -->
+<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
+<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
+<!-- * * * * * * * * do* * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * Delete the template below * * * * * * * * * * -->
+<!-- * * * * * * * to get started with your project! * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<ul *ngFor='let persona of personas'>
+    <li> {{persona.Documento}} </li>
+</ul>
+<div class="formulario">
+  
+<form>
+  <h1>Formulario</h1>
+  <div class="form-row">
+    <div class="col-md-4 mb-2">
+      <label for="validationServer01">Id persona</label>
+      <input type="text" class="form-control is-valid" id="validationServer01" value="Mark" required>
+      <div class="valid-feedback">
+        Ingrese su Id!
+      </div>
+    </div>
+    <div class="col-md-4 mb-2">
+      <label for="validationServer02">Documento</label>
+      <input type="text" class="form-control is-valid" id="validationServer02" value="Otto" required>
+      <div class="valid-feedback">
+          Ingrese su numero de documento
+      </div>
+    </div>
+  </div>
+  <div class="form-row">
+    <div class="col-md-6 mb-3">
+      <label for="validationServer03">Nombres</label>
+      <input type="text" class="form-control is-invalid" id="validationServer03" aria-describedby="validationServer03Feedback" required>
+      <div id="validationServer03Feedback" class="invalid-feedback">
+        Por favor ingrese sus nombres
+      </div>
+    </div>
+    
+    <div class="col-md-3 mb-3">
+      <label for="validationServer03">Apellidos</label>
+      <input type="text" class="form-control is-invalid" id="validationServer03" aria-describedby="validationServer03Feedback" required>
+      <div id="validationServer03Feedback" class="invalid-feedback">
+        Por favor ingrese sus apellidos.
+      </div>
+    </div>
+    <div class="col-md-3 mb-3">
+      <label for="validationServer05">Telefono</label>
+      <input type="text" class="form-control is-invalid" id="validationServer05" aria-describedby="validationServer05Feedback" required>
+      <div id="validationServer05Feedback" class="invalid-feedback">
+        Por favor ingrese su numero de telefono .
+      </div>
+    </div>
+  </div>
+  <div class="form-row">
+    <div class="col-md-4 mb-2">
+      <label for="validationServer01">Correo</label>
+      <input type="text" class="form-control is-valid" id="validationServer01" value="Mark" required>
+      <div class="valid-feedback">
+        Looks good!
+      </div>
+    </div>
+    <div class="col-md-6 mb-3">
+      <label for="validationServer02">Direccion</label>
+      <input type="text" class="form-control is-valid" id="validationServer02" value="Otto" required>
+      <div class="valid-feedback">
+        Looks good!
+      </div>
+    </div>
+  </div>
+  
+  <button class="btn btn-primary" type="submit">guardar</button>
+  <button class="btn btn-primary" type="danger">guardar</button>
+</form>
+</div>
+
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * The content above * * * * * * * * * * * -->
+<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
+<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * End of Placeholder * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+
+<router-outlet></router-outlet>
